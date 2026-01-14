@@ -2,4 +2,5 @@
 export class PayloadDto {
   sub!: number;
   username!: string;
+  isAdmin!: boolean;
 }

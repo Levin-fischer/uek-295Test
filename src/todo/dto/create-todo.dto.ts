@@ -1,13 +1,25 @@
-import { IsString, IsNotEmpty, MinLength, MaxLength } from 'class-validator';
+import { ApiProperty } from '@nestjs/swagger';
+import {
+  IsNotEmpty,
+  IsOptional,
+  IsString,
+  MaxLength,
+  MinLength,
+} from 'class-validator';
 
 export class CreateTodoDto {
+  @ApiProperty({ example: 'M295 Projekt abschliessen' })
   @IsString()
   @IsNotEmpty()
   @MinLength(8)
   @MaxLength(50)
-  title: string;
+  title!: string;
 
+  @ApiProperty({
+    example: 'Alle DTOs und Entities implementieren',
+    required: false,
+  })
   @IsString()
-  @MaxLength(1000)
-  description: string;
+  @IsOptional()
+  description?: string;
 }

@@ -2,23 +2,14 @@ import {
   Column,
   CreateDateColumn,
   Entity,
-  JoinColumn,
-  ManyToOne,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
   VersionColumn,
 } from 'typeorm';
-import { UserEntity } from '../../user/entities/user.entity';
-
 @Entity({ name: 'todo' })
 export class TodoEntity {
   @PrimaryGeneratedColumn({ name: 'id' })
   id!: number;
-
-  @ManyToOne(() => UserEntity, { nullable: false })
-  @JoinColumn({ name: 'user_id' })
-  user!: UserEntity;
-
   @Column({ name: 'title', type: 'varchar', length: 50 })
   title!: string;
 
