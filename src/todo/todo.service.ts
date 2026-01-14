@@ -8,7 +8,6 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { TodoEntity } from './entities/todo.entity';
 import { CreateTodoDto } from './dto/create-todo.dto';
-import { ReturnTodoDto } from './dto/return-todo.dto';
 import { UpdateTodoAdminDto } from './dto/update-todo-admin.dto';
 
 @Injectable()

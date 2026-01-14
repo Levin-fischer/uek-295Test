@@ -30,7 +30,6 @@ import {
 import { IsAdmin, UserId } from '../decorators';
 import { AuthGuard } from '../guards/auth.guard';
 import { CorrId } from '../../../decorators/corr-id.decorator';
-
 @Controller('user')
 @ApiBearerAuth()
 @UseGuards(AuthGuard)

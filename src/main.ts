@@ -77,7 +77,6 @@ async function bootstrap() {
     const now = new Date();
 
     const todos = [
-
       {
         title: 'OpenAdmin',
         description: 'Example of an open admin todo',

@@ -58,7 +58,6 @@ export class UserService {
     return this.passwordService.sign(corrId, {
       sub: user.id,
       username: user.username,
-      isAdmin: user.isAdmin,
     });
   }
 

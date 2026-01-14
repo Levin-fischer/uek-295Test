@@ -7,35 +7,35 @@ import {
   VersionColumn,
 } from 'typeorm';
 
-@Entity({ name: 'user' })
+@Entity('user')
 export class UserEntity {
-  @PrimaryGeneratedColumn({ name: 'id' })
-  id!: number;
+  @PrimaryGeneratedColumn({ type: 'int' })
+  id: number;
 
-  @Column({ name: 'username', type: 'varchar', length: 20, unique: true })
-  username!: string;
+  @Column({ type: 'varchar', length: 20, unique: true })
+  username: string;
 
-  @Column({ name: 'email', type: 'varchar', length: 255 })
-  email!: string;
+  @Column({ type: 'varchar' })
+  email: string;
 
-  @Column({ name: 'password', type: 'varchar', length: 255 })
-  passwordHash!: string;
+  @Column({ type: 'varchar' })
+  passwordHash: string;
 
-  @Column({ name: 'is_admin', type: 'boolean', default: false })
-  isAdmin!: boolean;
+  @Column({ type: 'boolean', default: false })
+  isAdmin: boolean;
 
-  @Column({ name: 'created_by_id', type: 'int', nullable: true })
-  createdById!: number | null;
+  @CreateDateColumn()
+  createdAt: Date;
 
-  @Column({ name: 'updated_by_id', type: 'int', nullable: true })
-  updatedById!: number | null;
+  @UpdateDateColumn()
+  updatedAt: Date;
 
-  @CreateDateColumn({ name: 'created_at' })
-  createdAt!: Date;
+  @VersionColumn()
+  version: number;
 
-  @UpdateDateColumn({ name: 'updated_at' })
-  updatedAt!: Date;
+  @Column()
+  createdById: number;
 
-  @VersionColumn({ name: 'version' })
-  version!: number;
+  @Column()
+  updatedById: number;
 }

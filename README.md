@@ -21,3 +21,12 @@
 | 4 | Logging, Swagger-Dokumentation, Tests, Feinschliff | 2 h |
 
 Gesamter Aufwand: ca. **9 Stunden**
+
+## Reflexion
+Mir ist das Projekt im Grossen und Ganzen sehr gut gelungen.
+Durch die vier Tage Vorbereitung hatte ich eine gewisse Sicherheit und wusste,
+wie ich Fehler fixe, was die verschiedenen Status Codes bedeuten und wie ich generell vorgehen muss.
+Waerend des Projekts hatte ich ein kleines Problem mit Postman.
+Ein Test hat lange Zeit nicht funktioniert, aber mit der Hilfe von Dirk konnten wir den Fehler gemeinsam finden und beheben.
+Das Projekt hat mir sehr Spass gemacht, und ich habe dabei viel gelernt, insbesondere wie man ein Backend entwickelt und testet.
+Der Zeitplan wurde eingehalten was ebenfalls sehr erfreulich war.
