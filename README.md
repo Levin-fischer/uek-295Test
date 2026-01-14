@@ -29,4 +29,4 @@ wie ich Fehler fixe, was die verschiedenen Status Codes bedeuten und wie ich gen
 Waerend des Projekts hatte ich ein kleines Problem mit Postman.
 Ein Test hat lange Zeit nicht funktioniert, aber mit der Hilfe von Dirk konnten wir den Fehler gemeinsam finden und beheben.
 Das Projekt hat mir sehr Spass gemacht, und ich habe dabei viel gelernt, insbesondere wie man ein Backend entwickelt und testet.
-Der Zeitplan wurde eingehalten was ebenfalls sehr erfreulich war.
+Der Zeitplan wurde eingehalten was ebenfalls sehr erfreulich war. Die soll Zeit hat mit der Ist Zeit vollständig übereingestimmt

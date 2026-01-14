@@ -1,10 +1,11 @@
 export const swaggerInfo = {
-  title: 'myApp',
-  description: 'Die API Beschreibung',
+  title: '=Todo API von Levin',
+  description: '="Ein API zur Verwaltung von Todo items',
+  version: '1.0.0',
   docPath: 'docs',
   author: {
-    name: 'Kursleiter',
-    email: 'coach@ict-uek.ch',
-    url: 'https://ict-uek.ch',
+    name: 'Levin Fischer',
+    email: 'l.fischer.inf24@stud.bbbaden.ch',
+    url: 'https://brack.ch',
   },
 } as const;
